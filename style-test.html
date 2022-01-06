@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Style test</title>
+
+        <!---style function can make some sentence i choosed to a specific style-->
+        <!-- .big means making a new class called big -->
+        <!-- .big.uppercase means sentences with both classes(big and uppercase) will have a specific style-->
+        <!-- the span element can just ignore all the style set before and do it's own function.
+        the h1 span means that it will only apply on h1 -->
+        <style type="text/css">
+
+            h1{
+                font-size: 30px;
+                color: salmon;
+            }
+
+            h2{
+                font-size: 20px;
+                color: green;
+            }
+            
+            .big{
+                font-size: 60px;
+            }
+           
+            .uppercase{
+                text-transform: uppercase
+            }
+
+            .big.uppercase{
+                color:navy;
+            }
+
+            h1 span{
+                 color: violet;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <span>default element</span>
+        <h1 class="big uppercase">Heading 1 - 1</h1>
+        <h1 class="big"><span>Heading 1 - 2</span></h1>
+        <h1>Heading 1 - 3</h1>
+
+        <h2>Heading 2 - 1</h2>
+        <!--the function span can just ignore all the style set before but if h1 span wont apply to h2-->
+        <h2 class="big"><span>Heading 2 - 2</span></h2>
+        <h2 class="big">Heading 2 - 3</h2>
+    
+    </body>
+
+</html>
