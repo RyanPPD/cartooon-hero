@@ -1,0 +1,35 @@
+/*style function can make some sentence i choosed to a specific style*/
+/*.big means making a new class called big*/
+/* .big.uppercase means sentences with both classes(big and uppercase) will have a specific style*/
+/* the span element can just ignore all the style set before and do it's own function.
+the h1 span means that it will only apply on h1 */
+
+body{
+    background-color: rgb(170, 106, 106);
+}
+
+h1{
+    font-size: 30px;
+    color: salmon;
+}
+
+h2{
+    font-size: 20px;
+    color: green;
+}
+
+.big{
+    font-size: 60px;
+}
+
+.uppercase{
+    text-transform: uppercase
+}
+
+.big.uppercase{
+    color:navy;
+}
+
+h1 span{
+        color: violet;
+}
